@@ -4,7 +4,7 @@ import helmet from 'helmet';
 import morgan from 'morgan';
 import swaggerUi from 'swagger-ui-express';
 import swaggerSpec from './config/swagger.js';
-// import errorHandler from './middleware/errorHandler.js';
+import errorHandler from './middleware/errorHandler.js';
 import rateLimiter from './middleware/rateLimiter.js';
 // import authRoutes from './routes/authRoutes.js';
 // import userRoutes from './routes/userRoutes.js';
@@ -62,7 +62,7 @@ app.use((req, res) => {
 });
 
 // Global error handler
-// app.use(errorHandler);
+app.use(errorHandler);
 
 const PORT = process.env.PORT || 5000;
 

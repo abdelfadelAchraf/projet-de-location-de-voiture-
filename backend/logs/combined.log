@@ -38,3 +38,12 @@
 {"level":"info","message":"MongoDB Connected, the host is: ac-qzxjbp7-shard-00-01.izopdwf.mongodb.net","timestamp":"2025-10-07 14:28:41"}
 {"level":"info","message":"Server running in development mode on port 5000","timestamp":"2025-10-07 14:28:44"}
 {"level":"info","message":"MongoDB Connected, the host is: ac-qzxjbp7-shard-00-01.izopdwf.mongodb.net","timestamp":"2025-10-07 14:28:46"}
+{"level":"info","message":"Server running in development mode on port 5000","timestamp":"2025-10-07 14:29:08"}
+{"level":"info","message":"MongoDB Connected, the host is: ac-qzxjbp7-shard-00-02.izopdwf.mongodb.net","timestamp":"2025-10-07 14:29:10"}
+{"level":"info","message":"Server running in development mode on port 5000","timestamp":"2025-10-07 14:30:20"}
+{"level":"info","message":"Server running in development mode on port 5000","timestamp":"2025-10-07 14:30:25"}
+{"level":"info","message":"MongoDB Connected, the host is: ac-qzxjbp7-shard-00-00.izopdwf.mongodb.net","timestamp":"2025-10-07 14:30:27"}
+{"level":"info","message":"Server running in development mode on port 5000","timestamp":"2025-10-07 14:30:31"}
+{"level":"info","message":"MongoDB Connected, the host is: ac-qzxjbp7-shard-00-00.izopdwf.mongodb.net","timestamp":"2025-10-07 14:30:32"}
+{"level":"info","message":"Server running in development mode on port 5000","timestamp":"2025-10-07 14:30:40"}
+{"level":"info","message":"MongoDB Connected, the host is: ac-qzxjbp7-shard-00-00.izopdwf.mongodb.net","timestamp":"2025-10-07 14:30:41"}

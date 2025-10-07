@@ -7,7 +7,7 @@ import asyncHandler from '../utils/asyncHandler.js';
 
 
 // Protect routes - verify JWT token
-exports.protect = asyncHandler(async (req, res, next) => {
+export const protect = asyncHandler(async (req, res, next) => {
   let token;
 
   // Check for token in Authorization header
@@ -45,7 +45,7 @@ exports.protect = asyncHandler(async (req, res, next) => {
 });
 
 // Optional authentication - doesn't fail if no token
-exports.optionalAuth = asyncHandler(async (req, res, next) => {
+export const optionalAuth = asyncHandler(async (req, res, next) => {
   let token;
 
   if (req.headers.authorization && req.headers.authorization.startsWith('Bearer')) {
@@ -66,7 +66,7 @@ exports.optionalAuth = asyncHandler(async (req, res, next) => {
 });
 
 // Verify refresh token
-exports.verifyRefreshToken = asyncHandler(async (req, res, next) => {
+export const verifyRefreshToken = asyncHandler(async (req, res, next) => {
   const { refreshToken } = req.body;
 
   if (!refreshToken) {
@@ -89,4 +89,4 @@ exports.verifyRefreshToken = asyncHandler(async (req, res, next) => {
   }
 });
 
-export default exports;
+export default { protect, optionalAuth, verifyRefreshToken };

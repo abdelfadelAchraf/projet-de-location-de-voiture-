@@ -7,7 +7,7 @@ import swaggerSpec from './config/swagger.js';
 import errorHandler from './middleware/errorHandler.js';
 import rateLimiter from './middleware/rateLimiter.js';
 // import authRoutes from './routes/authRoutes.js';
-// import userRoutes from './routes/userRoutes.js';
+import userRoutes from './routes/userRoutes.js';
 // import carRoutes from './routes/carRoutes.js';
 // import bookingRoutes from './routes/bookingRoutes.js';
 // import paymentRoutes from './routes/paymentRoutes.js';
@@ -52,6 +52,18 @@ app.get('/health', (req, res) => {
     timestamp: new Date().toISOString()
   });
 });
+
+
+// API Routes
+// app.use('/api/auth', authRoutes);
+app.use('/api/users', userRoutes);
+// app.use('/api/cars', carRoutes);
+// app.use('/api/bookings', bookingRoutes);
+// app.use('/api/payments', paymentRoutes);
+// app.use('/api/reviews', reviewRoutes);
+// app.use('/api/locations', locationRoutes);
+// app.use('/api/admin', adminRoutes);
+
 
 // 404 handler
 app.use((req, res) => {
